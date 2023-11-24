@@ -43,6 +43,7 @@ export const modelOptions: ModelOptions[] = [
   'migtissera/synthia-70b',
   'open-orca/mistral-7b-openorca',
   'teknium/openhermes-2-mistral-7b',
+  'teknium/openhermes-2.5-mistral-7b',
   'pygmalionai/mythalion-13b',
   'undi95/remm-slerp-l2-13b',
   'gryphe/mythomax-l2-13b',
@@ -85,6 +86,7 @@ export const modelMaxToken: ModelMaxToken = {
   'migtissera/synthia-70b': 8192,
   'open-orca/mistral-7b-openorca': 8192,
   'teknium/openhermes-2-mistral-7b': 4096,
+  'teknium/openhermes-2.5-mistral-7b': 4096,
   'pygmalionai/mythalion-13b': 8192,
   'undi95/remm-slerp-l2-13b': 6144,
   'gryphe/mythomax-l2-13b': 4096,
@@ -209,6 +211,10 @@ export const modelCost = {
     completion: { price: 0.0002, unit: 1000 },
   },
   'teknium/openhermes-2-mistral-7b': {
+    prompt: { price: 0.0002, unit: 1000 },
+    completion: { price: 0.0002, unit: 1000 },
+  },
+  'teknium/openhermes-2.5-mistral-7b': {
     prompt: { price: 0.0002, unit: 1000 },
     completion: { price: 0.0002, unit: 1000 },
   },
